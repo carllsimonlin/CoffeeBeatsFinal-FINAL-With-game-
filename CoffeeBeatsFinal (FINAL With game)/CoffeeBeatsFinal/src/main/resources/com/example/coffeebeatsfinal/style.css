@@ -1,0 +1,8 @@
+.bottom_bar_color{
+	-fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #411530, #AE431E);
+}
+
+.body-background{
+	-fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #681330, #D06224);
+}
+

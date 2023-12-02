@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="body-background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coffeebeatsfinal.HomeController">
+   <children>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#1f93ff" height="122.0" layoutX="177.0" layoutY="171.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" style="-fx-fill: transparent;" width="213.0" />
+      <ImageView fitHeight="90.0" fitWidth="82.0" layoutX="242.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Library.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="253.0" layoutY="271.0" text="My Library" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="Library" alignment="BOTTOM_CENTER" layoutX="164.0" layoutY="159.0" mnemonicParsing="false" onAction="#onLibrary" opacity="0.15" prefHeight="146.0" prefWidth="238.0" style="-fx-background-color: black; -fx-background-radius: 30 40px;" textFill="WHITE" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="374.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Coffee Beats Logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="122.0" layoutX="551.0" layoutY="171.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" style="-fx-fill: transparent;" width="213.0" />
+      <ImageView fitHeight="90.0" fitWidth="82.0" layoutX="616.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Search Button.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="621.0" layoutY="271.0" text="Search Music" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="Search" alignment="BOTTOM_CENTER" layoutX="538.0" layoutY="159.0" mnemonicParsing="false" onAction="#onSearch" opacity="0.15" prefHeight="146.0" prefWidth="238.0" style="-fx-background-color: black; -fx-background-radius: 30 40px;" textFill="WHITE" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#1f93ff" height="122.0" layoutX="178.0" layoutY="399.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" style="-fx-fill: transparent;" width="213.0" />
+      <ImageView fitHeight="90.0" fitWidth="82.0" layoutX="243.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Playlist.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="251.0" layoutY="500.0" text="My Playlists" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="Playlists" alignment="BOTTOM_CENTER" layoutX="165.0" layoutY="387.0" mnemonicParsing="false" onAction="#onPlaylists" opacity="0.15" prefHeight="146.0" prefWidth="238.0" style="-fx-background-color: black; -fx-background-radius: 30 40px;" textFill="WHITE" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#1f93ff" height="122.0" layoutX="551.0" layoutY="401.0" stroke="WHITE" strokeLineCap="BUTT" strokeType="INSIDE" style="-fx-fill: transparent;" width="213.0" />
+      <ImageView fitHeight="90.0" fitWidth="82.0" layoutX="616.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Play.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="621.0" layoutY="502.0" text="Queue Music" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="MusicQueue" alignment="BOTTOM_CENTER" layoutX="538.0" layoutY="389.0" mnemonicParsing="false" onAction="#onMusicQueue" opacity="0.15" prefHeight="146.0" prefWidth="238.0" style="-fx-background-color: black; -fx-background-radius: 30 40px;" textFill="WHITE" />
+      <Circle fill="#0478e4" layoutX="474.0" layoutY="350.0" radius="50.0" stroke="WHITE" strokeType="INSIDE" style="-fx-fill: transparent;" />
+      <Label layoutX="445.0" layoutY="371.0" prefHeight="17.0" prefWidth="62.0" text="Mini Game" textFill="WHITE" />
+      <ImageView fitHeight="61.0" fitWidth="82.0" layoutX="434.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Games.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Button fx:id="game" layoutX="411.0" layoutY="289.0" mnemonicParsing="false" onAction="#onGame" opacity="0.15" prefHeight="122.0" prefWidth="123.0" style="-fx-background-radius: 100; -fx-background-color: black;" text="    ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

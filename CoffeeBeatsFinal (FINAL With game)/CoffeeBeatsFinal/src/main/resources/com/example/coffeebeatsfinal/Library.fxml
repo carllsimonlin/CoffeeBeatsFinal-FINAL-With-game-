@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="body-background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coffeebeatsfinal.LibraryController">
+   <children>
+      <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="789.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Home.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Home" layoutX="776.0" layoutY="89.0" mnemonicParsing="false" onAction="#onHome" opacity="0.15" prefHeight="40.0" prefWidth="52.0" style="-fx-background-radius: 20px; -fx-background-color: #000000;" textFill="WHITE" />
+      <ImageView fitHeight="61.0" fitWidth="129.0" layoutX="385.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Coffee Beats Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="70.0" layoutY="55.0" prefHeight="96.0" prefWidth="260.0" text="My Library" textFill="#eaeaea">
+         <font>
+            <Font name="Britannic Bold" size="55.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="displaySong" layoutX="70.0" layoutY="145.0" prefHeight="394.0" prefWidth="755.0">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="652.0" layoutY="102.0" text="ARTIST NAME" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="sortAlbum" layoutX="639.0" layoutY="89.0" mnemonicParsing="false" onAction="#onAlbum" opacity="0.15" prefHeight="40.0" prefWidth="118.0" style="-fx-background-radius: 20px; -fx-background-color: #000000;" textFill="WHITE" />
+      <Label layoutX="530.0" layoutY="101.0" prefHeight="18.0" prefWidth="90.0" text="SONG NAME" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="sortName" layoutX="514.0" layoutY="89.0" mnemonicParsing="false" onAction="#onSongName" opacity="0.15" prefHeight="40.0" prefWidth="118.0" style="-fx-background-radius: 20px; -fx-background-color: #000000;" textFill="WHITE" />
+      <Label layoutX="402.0" layoutY="89.0" prefHeight="40.0" prefWidth="112.0" text="Sort By:" textFill="#eaeaea">
+         <font>
+            <Font name="Britannic Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
